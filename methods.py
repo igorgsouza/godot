@@ -564,7 +564,7 @@ def no_verbose(sys, env):
 
     # Colors are disabled in non-TTY environments such as pipes. This means
     # that if output is redirected to a file, it will not contain color codes
-    if sys.stdout.isatty():
+    if sys.stdout.isatty() and False:
         colors["blue"] = "\033[0;94m"
         colors["bold_blue"] = "\033[1;94m"
         colors["reset"] = "\033[0m"

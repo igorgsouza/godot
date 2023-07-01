@@ -1,0 +1,15 @@
+# SCsub
+
+Import('env')
+Import('env_modules')
+
+module_env = env_modules.Clone()
+module_env.add_source_files(env.modules_sources, "*.cpp")
+module_env.add_source_files(env.modules_sources, "./2d/*.cpp")
+module_env.add_source_files(env.modules_sources, "./3d/*.cpp")
+# Append CCFLAGS flags for both C and C++ code.
+#module_env.Append(CPPPATH=["#scene/2d/"]) 
+module_env.Append(CCFLAGS=['-O2'])
+# If you need to, you can:
+# - Append CFLAGS for C code only.
+# - Append CXXFLAGS for C++ code only.
