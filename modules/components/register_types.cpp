@@ -1,6 +1,4 @@
-/* register_types.cpp */
-
-#include "register_types.h"
+/* #include "register_types.h"
 
 #include "2d/component_2d.h"
 #include "3d/component_3d.h"
@@ -18,5 +16,4 @@ void uninitialize_components_module(ModuleInitializationLevel p_level) {
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}
-	// Nothing to do here in this example.
-}
+} */
